@@ -451,7 +451,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -751,7 +751,7 @@ section {
 
 .about:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -838,12 +838,36 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
-.why-us .box {
+.why-us {
+  background: url("../img/about-bg.jpg") center center;
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+}
+
+.why-us:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.why-us .box{
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
   background: #1a1814;
 }
+
+.why-us .btn{
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  background: #1a1814;
+}
+
 
 .why-us .box span {
   display: block;
@@ -867,10 +891,14 @@ section {
   padding: 0;
 }
 
-.why-us .box:hover {
+.why-us .box:hover{
   background: #cda45e;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.why-us .btn:hover{
+  background: #cda45e;
 }
 
 .why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
@@ -1047,7 +1075,7 @@ section {
 
 .events::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
   right: 0;
